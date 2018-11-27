@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  height: 100%;
+  color: #212121;
+}
+
+img {
+  cursor: pointer;
+  /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+}
+img:hover {
+  /*opacity: 0.9;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  min-height: 55px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+}
+
+.videospace {
+  flex-grow: 2;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.previews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.preview {
+  height: 18%;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.preview:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.preview img {
+  height: 100%;
+}
+
+.selected {
+  position: relative;
+
+  margin: 20px;
+  flex-grow: 2;
+
+  align-items: center;
+  justify-content: space-around;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.selected img {
+  max-width: 100%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.selected img:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.sidebar {
+  width: 360px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  position: relative;
+}
+
+.exam-info {
+  padding: 10px 20px;
+  padding-top: 20px;
+}
+
+.chat-shortcuts {
+  background-color: #f2f2f2;
+}
+
+.cyber-tinder {
+  background-color: #FFCDD2;
+  padding: 20px;
+}
+
+.cyber-tinder .title {
+  color: #B71C1C;
+  margin-bottom: 10px;
+}
+
+.cyber-tinder .warning img {
+  width: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+.cyber-tinder .button {
+  font-weight: bold;
+  color: #B71C1C;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cyber-tinder .button:hover {
+  color: #212121;
+}
+
+.chat-shortcuts {
+  background-color: #fff;
+}
+
+.shortcut {
+  padding: 20px;
+  /*background-color: #FB8C00;
+  color: #fff;*/
+  float: left;
+  cursor: pointer;
+  /*margin: 5px;*/
+}
+
+.shortcut.right {
+  float: right;
+}
+
+.full {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.full img {
+  height: 100%;
+  max-width: 100%;
+}
+
+
+.tiles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.student {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  height: 30%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.student:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.student img {
+  width: 50%;
+}
