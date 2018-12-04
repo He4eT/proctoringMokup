@@ -43,6 +43,7 @@ header {
 
 .previews {
   flex-grow: 0;
+  flex-basis: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
